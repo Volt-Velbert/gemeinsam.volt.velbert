@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  frontend:
+    build:
+      dockerfile: "Dockerfile"
+      context: "."
+    ports:
+      - "80:3000"
+    environment:
+      RESEND_API_KEY: "re_7NjmNEAc_ABnTXJU4K3X2jJpxGYkhkQdr"
+    restart: unless-stopped
